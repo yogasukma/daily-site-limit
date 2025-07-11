@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 380px;
+  padding: 15px;
+  background-color: #1f2023;
+  color: #e0e0e0;
+}
+
+/* Tab container */
+.tab {
+  overflow: hidden;
+  background-color: #2a2b2e;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Tab buttons */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 15px;
+  color: #a0a0a0;
+  font-weight: 500;
+  width: 33.33%;
+}
+
+/* Tab button hover effect */
+.tab button:hover {
+  background-color: #3a3b3e;
+  color: #ffffff;
+}
+
+/* Active tab button */
+.tab button.active {
+  background-color: #4a90e2;
+  color: #ffffff;
+}
+
+/* Tab content */
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border: 1px solid #3a3b3e;
+  border-radius: 8px;
+  background-color: #2a2b2e;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+h3 {
+  color: #4a90e2;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 5px;
+  margin-top: 0;
+}
+
+h4 {
+    color: #e0e0e0;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #3a3b3e;
+  padding: 12px;
+  text-align: left;
+}
+
+thead {
+  background-color: #3a3b3e;
+  color: #e0e0e0;
+}
+
+tr:nth-child(even) {
+  background-color: #2f3033;
+}
+
+/* Enhance table styling */
+#rules-table {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#rules-table thead tr {
+  background-color: #4a90e2;
+  color: white;
+}
+
+#rules-table th {
+  font-weight: 500;
+  text-align: left;
+}
+
+#rules-table tr:hover {
+  background-color: #3a3b3e;
+}
+
+#rules-table th:nth-child(3),
+#rules-table td:nth-child(3) {
+  width: 20%;
+  text-align: center;
+}
+
+/* Forms and Inputs */
+form {
+  margin-top: 20px;
+}
+
+input[type="text"], input[type="number"] {
+  width: calc(50% - 12px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #3a3b3e;
+  border-radius: 4px;
+  background-color: #1f2023;
+  color: #e0e0e0;
+}
+
+#limit-form > input[type="text"],
+#limit-form > input[type="number"],
+#limit-form > button {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-right: 0;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+.delete-rule-btn {
+    background-color: #e24a4a;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-rule-btn:hover {
+    background-color: #bd3535;
+}
+
+#reset-time-button {
+    background-color: #e24a4a;
+}
+
+#reset-time-button:hover {
+    background-color: #bd3535;
+}
+
+hr {
+    border: 1px solid #3a3b3e;
+    margin: 20px 0;
+}
+
+/* Status section */
+#current-site-status p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+#current-site-status p strong {
+    color: #4a90e2;
+}

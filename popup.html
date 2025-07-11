@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daily Site Limit</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div class="tab">
+    <button class="tablinks" data-tab="Status">Status</button>
+    <button class="tablinks" data-tab="Rules">Rules</button>
+    <button class="tablinks" data-tab="Stats">Stats</button>
+  </div>
+
+  <div id="Status" class="tabcontent">
+    <h3>Current Site</h3>
+    <div id="current-site-status"></div>
+    <button id="reset-time-button">Reset Time</button>
+  </div>
+
+  <div id="Rules" class="tabcontent">
+    <h3>Site Rules</h3>
+    <table id="rules-table">
+      <thead>
+        <tr>
+          <th>Site</th>
+          <th>Limit (minutes)</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <hr>
+    <h4>Add New Rule</h4>
+    <form id="limit-form">
+      <input type="text" id="site-url" placeholder="Enter site URL" required>
+      <input type="number" id="time-limit" placeholder="Enter time limit in minutes" required>
+      <button type="submit">Set Limit</button>
+    </form>
+  </div>
+
+  <div id="Stats" class="tabcontent">
+    <h3>Today's Stats</h3>
+    <table id="stats-table">
+      <thead>
+        <tr>
+          <th>Site</th>
+          <th>Time Spent</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
