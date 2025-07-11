@@ -2,6 +2,8 @@
 
 Daily Site Limit is a Chrome extension that helps you monitor and manage the time you spend on different websites. Set daily time limits for specific sites, get notified when you exceed your limits, and view your browsing stats—all with a simple, user-friendly interface.
 
+![Screenshot of Daily Site Limit Chrome Extension](thumbnail.png)
+
 ## Features
 
 - **Track Time by Site:** Automatically tracks the time you spend on each website (by root domain).
